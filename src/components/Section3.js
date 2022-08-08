@@ -6,35 +6,35 @@ import "swiper/css/bundle";
 const section3 = [
   {
     id: 1,
-    image: "images/img1.jpg",
+    image: "images/img10.jpg",
   },
   {
     id: 2,
-    image: "images/img1.jpg",
+    image: "images/img11.jpg",
   },
   {
     id: 3,
-    image: "images/img1.jpg",
+    image: "images/img12.jpg",
   },
   {
     id: 4,
-    image: "images/img1.jpg",
+    image: "images/img16.jpg",
   },
   {
     id: 5,
-    image: "images/img1.jpg",
+    image: "images/img14.jpg",
   },
   {
     id: 6,
-    image: "images/img1.jpg",
+    image: "images/img15.jpg",
   },
   {
     id: 7,
-    image: "images/img1.jpg",
+    image: "images/img2.jpg",
   },
   {
     id: 8,
-    image: "images/img1.jpg",
+    image: "images/img3.jpg",
   },
 ];
 
@@ -70,14 +70,15 @@ const Section3 = () => {
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
-            uk-scrollspy="cls: uk-animation-fade; target: .swiper-slide; delay: 300; repeat: false"
+            uk-scrollspy="cls: uk-animation-fade; target: .swiper-slide; delay: 300; repeat: true"
+            uk-lightbox="animation: scale"
           >
             {section3.map((props) => {
               const { id, image } = props;
               return (
                 <SwiperSlide key={id}>
                   <div className="section3-wrapper">
-                    <div className="uk-position-relative" uk-lightbox="animation: scale">
+                    <div className="uk-position-relative" >
                       <a href={image} className="section3-img">
                         <img src={image} alt="image" />
                       </a>

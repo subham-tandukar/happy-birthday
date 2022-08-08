@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { TextField } from "@mui/material";
+import $ from "jquery";
 
 const Header = () => {
   const [name, setName] = useState("");
+  const [msg, setMsg] = useState("");
   const [none, setNone] = useState(false);
 
   const handleName = (e) => {
@@ -9,20 +12,39 @@ const Header = () => {
     setName(newName);
   };
 
+  const handleOk = () => {
+    if (name === "") {
+      setNone(none);
+      setMsg("Name cannot be blank");
+      
+    } else {
+      setNone(!none);
+      setMsg("");
+
+      const mahima = document.querySelector("html");
+
+      $(mahima).addClass("scroll");
+    }
+  };
+  const handleKeyPress = () => {
+    setMsg("");
+  };
+
   return (
     <>
       <section className={`your-name ${none ? "none" : ""}`}>
         <div className="box">
-          <label htmlFor="nick-name">Enter Your Nickname: ❣️</label> <br />
-          <input
-            type="text"
-            id="nick-name"
+          <TextField
+            id="outlined-basic"
+            label="Enter Your Nickname: ❣️"
+            variant="outlined"
             style={{ textTransform: "capitalize" }}
             onChange={handleName}
             autoComplete="off"
+            onKeyPress={handleKeyPress}
           />
-          <br />
-          <button onClick={() => setNone(!none)}>Ok</button>
+          <span>{msg}</span>
+          <button onClick={handleOk}>Ok</button>
         </div>
       </section>
 
@@ -32,7 +54,7 @@ const Header = () => {
           uk-sticky="top:300; animation: uk-animation-slide-top;"
         >
           <h3 style={{ textTransform: "capitalize" }}>
-            Happy Birthday {name} 💓 🎈
+            Happy Birthday <span>{name}</span> 💓 🎈
           </h3>
         </div>
       </header>

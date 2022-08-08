@@ -8,9 +8,9 @@ const Section2 = () => {
           <div className="uk-child-width-1-3@s uk-flex uk-flex-middle uk-padding uk-padding-remove-horizontal uk-padding-remove-top uk-grid">
             <div uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 90%;">
               <img
-                src="images/img1.jpg"
+                src="images/hb1.png"
                 alt="image"
-                uk-scrollspy="cls: uk-animation-kenburns; repeat: false"
+                uk-scrollspy="cls: uk-animation-kenburns; repeat: true"
               />
             </div>
 
@@ -25,10 +25,10 @@ const Section2 = () => {
 
             <div uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 90%;">
               <img
-                src="images/img1.jpg"
+                src="images/hb2.png"
                 alt="image"
                 className="uk-animation-reverse uk-transform-origin-top-right"
-                uk-scrollspy="cls: uk-animation-kenburns; repeat: false"
+                uk-scrollspy="cls: uk-animation-kenburns; repeat: true"
               />
             </div>
           </div>
