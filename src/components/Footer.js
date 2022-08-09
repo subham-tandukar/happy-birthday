@@ -1,6 +1,6 @@
 import React from "react";
-import $ from 'jquery'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import $ from "jquery";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const Footer = () => {
   $(window).scroll(function () {
@@ -25,19 +25,26 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <marquee behavior="" direction="">
+        <marquee behavior="scroll" direction="left">
           <p>
             Although we are strangers, <span>Happy Birthday</span> to the best
-            person I have ever known... 🍰 ani <span>All The Best </span> for ur exam 👍
+            person I have ever known... 🍰 ani <span>All The Best </span> for ur
+            exam 👍
           </p>
         </marquee>
       </footer>
 
-      <a href="!#" className="go-to-top" title="Go to Top" id="top" uk-scroll="true">
+      <a
+        href="!#"
+        className="go-to-top"
+        title="Go to Top"
+        id="top"
+        uk-scroll="true"
+      >
         <span className="go-to-top-icon">
-            <KeyboardArrowUpIcon/>
+          <KeyboardArrowUpIcon />
         </span>
-    </a>
+      </a>
     </>
   );
 };
