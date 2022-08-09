@@ -27,7 +27,6 @@ const Section2 = () => {
               <img
                 src="images/hb2.png"
                 alt="image"
-                className="uk-animation-reverse uk-transform-origin-top-right"
                 uk-scrollspy="cls: uk-animation-kenburns; repeat: true"
               />
             </div>
