@@ -444,9 +444,17 @@ footer {
 }
 
 @media (max-width: 500px) {
-  .your-name .box {
-    width: 93%;
+  .your-name {
+    .box {
+      padding: 1rem 0.5rem 0.5rem 0.5rem !important;
+
+      label {
+        font-size: 12px !important;
+        line-height: 24px !important;
+      }
+    }
   }
+
   .your-name .box .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
     width: 100% !important;
   }
