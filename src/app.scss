@@ -58,9 +58,6 @@ html {
       margin-bottom: 1rem;
       font-size: 14px;
     }
-    .css-i44wyl{
-      width: 100% !important;
-    }
 
     .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
       .MuiOutlinedInput-notchedOutline {
@@ -449,6 +446,9 @@ footer {
 @media (max-width: 500px) {
   .your-name .box {
     width: 93%;
+    .css-i44wyl {
+      width: 100% !important;
+    }
     .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
       width: 100%;
     }
